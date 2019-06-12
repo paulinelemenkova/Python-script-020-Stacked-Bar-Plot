@@ -22,21 +22,19 @@ bars4 = df.plate_carol
 profiles = df.profile
 #
 # Generate a loop for 25 profiles
-for i in range(1,26):
-    print(i)
+i = range(1, 26)
 names = print(i)
 #
 # Create bars
 barWidth = 1
 ax = plt.subplot(111)
-plt.bar(profiles, bars1, color='#dbd0e6', edgecolor='white',
-        width=barWidth, label='Philippine Plate')
-plt.bar(profiles, bars2, bottom=(bars1), color='#a0d8ef',
-        edgecolor='white', width=barWidth,label='Pacific Plate')
-plt.bar(profiles, bars3, bottom=(bars1 + bars2), color='#eebbcb',
-        edgecolor='white', width=barWidth, label='Mariana Plate')
-plt.bar(profiles, bars4, bottom=(bars1 + bars2 + bars3), color='#c1d8ac',
-        edgecolor='white', width=barWidth,label='Caroline Plate')
+plt.bar(profiles, bars1, color='#dbd0e6', edgecolor='white', width=barWidth, label='Philippine Plate')
+plt.bar(profiles, bars2, bottom=(bars1), color='#a0d8ef', edgecolor='white', width=barWidth, 
+        label='Pacific Plate')
+plt.bar(profiles, bars3, bottom=(bars1 + bars2), color='#eebbcb', edgecolor='white', width=barWidth,
+       label='Mariana Plate')
+plt.bar(profiles, bars4, bottom=(bars1 + bars2 + bars3), color='#c1d8ac', edgecolor='white', width=barWidth,
+       label='Caroline Plate')
 #
 # Custom X axis
 plt.xticks(profiles, names, fontweight='normal', fontsize=7, rotation=30)
