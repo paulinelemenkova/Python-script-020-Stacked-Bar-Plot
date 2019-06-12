@@ -22,8 +22,7 @@ bars4 = df.plate_carol
 profiles = df.profile
 #
 # Generate a loop for 25 profiles
-i = range(1, 26)
-names = print(i)
+names = range(1, 26)
 #
 # Create bars
 barWidth = 1
